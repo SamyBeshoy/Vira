@@ -1,0 +1,147 @@
+include mixin.pug
+doctypehtml
+html(lang="en")
+    block head
+        head
+            +head("Vira")
+    body
+        block HeaderAndLandingPage
+            .HeaderAndLandingPage
+                .container
+                    header
+                        .logo: a(href="index.html"): i(class="fa-brands fa-viacoin fa-fw")
+                        .icon: i(class="fa-solid fa-bars")
+                    .landing 
+                        div WE ARE VIRA AGENCY
+                        div Creative digital agency based in US
+                        a(href="index.html") Explore Us
+        block about
+            section.about
+                .container
+                    .title ABOUT AGENCY
+                    hr.line
+                    div Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The 
+                        br 
+                        | Garment Club met zich meebrengt. Onze enige missie is dat jij de best geklede man 
+                        br 
+                        | van de omgeving bent. Laat gratis een op eden box samenstellen door je personal 
+                        br 
+                        | shopper en betaal.
+                    img(src="imgs/signature.png", alt="signature")
+                    div Vira Studio-ceo
+        block what
+            section.what
+                .container
+                    .title WHAT WE DO
+                    hr.line
+                    .boxs
+                        .box
+                            .icon: i(class="fa-regular fa-gem fa-fw")
+                            .text DIGITAL DESIGN
+                            hr
+                            div Complimenten, bewonderend gefluit en lonkende 
+                                br
+                                | blikken zijn enkele risico’s die The Garment Club met 
+                                br
+                                | zichlaim meebrengt. Onze enige missiede
+                        .box
+                            .icon: i(class="fa-solid fa-gears fa-fw")
+                            .text WEB DEVELOPMENT
+                            hr
+                            div Complimenten, bewonderend gefluit en lonkende 
+                                br
+                                | blikken zijn enkele risico’s die The Garment Club met 
+                                br
+                                | zichlaim meebrengt. Onze enige missiede
+                        .box
+                            .icon: i(class="fa-solid fa-bicycle fa-fw")
+                            .text DIGITAL MARKETING
+                            hr
+                            div Complimenten, bewonderend gefluit en lonkende 
+                                br
+                                | blikken zijn enkele risico’s die The Garment Club met 
+                                br
+                                | zichlaim meebrengt. Onze enige missiede
+        block responsive
+            .responsive
+                .containerBox
+                    .boxOne
+                    .boxTwo
+                        .title RESPONSIVE DESIGN EXPERT
+                        hr.line
+                        div Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+        block adsOne 
+            section.adsOne 
+                .container
+                    img(src="imgs/quote.png", alt="quote")
+                    div A user interface is like a joke. If you have to explain it, it’s not that good.
+                    div Martin leBlance, Iconfinder
+                    img(src="imgs/mouse.png", alt="mouse")
+        block work 
+            section.work 
+                .container
+                    .title OUR WORKSTATIONS
+                    hr.line
+                    .boxs
+                        .box 
+                            img(src="imgs/4.jpg", alt="workstation")
+                            div Creative freaks
+                            hr
+                            div Complimenten, bewonderend gefluit en lonkende blikken 
+                                br
+                                | zijn enkele risico’s die The Garment Club met 
+                                br 
+                                | zichlaim meebrengt. Onze enige missiede
+                        .box 
+                            img(src="imgs/5.jpg", alt="workstation")
+                            div Creative Geeks
+                            hr
+                            div Complimenten, bewonderend gefluit en lonkende blikken 
+                                br
+                                | zijn enkele risico’s die The Garment Club met 
+                                br 
+                                | zichlaim meebrengt. Onze enige missiede
+                        .box 
+                            img(src="imgs/6.jpg", alt="workstation")
+                            div Creative Nerds
+                            hr
+                            div Complimenten, bewonderend gefluit en lonkende blikken 
+                                br
+                                | zijn enkele risico’s die The Garment Club met 
+                                br 
+                                | zichlaim meebrengt. Onze enige missiede
+        block adsThree
+            section.adsThree
+                .container 
+                    div Subscribe to our newsletter to get update
+                    div 
+                        input(type="email", name="mail" placeholder="Write Your Mail")
+                        input(type="submit", value="Send Me")
+        block contact
+            section.contact
+                .container
+                    .title DROP US A LINE
+                    hr.line
+                    .boxs
+                        .box 
+                            <i class="fa-regular fa-map fa-fw"></i>
+                            div ADDRESS
+                            hr
+                            div Level 5, 25 pitt st, US
+                        .box 
+                            <i class="fa-solid fa-phone fa-fw"></i>
+                            div PHONE
+                            hr
+                            div +555 211 3747
+                        .box 
+                            <i class="fa-solid fa-paper-plane fa-fw"></i>
+                            div EMAIL
+                            hr
+                            div info@example.com
+                    .icons  
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+        block footer
+            footer Copyright 2024 © by 
+                span beshoy samy.
