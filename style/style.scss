@@ -1,0 +1,32 @@
+// import global file
+@use "global" as *; 
+
+// import variables file
+@use "variables" as *; 
+
+// import HeaderAndLandingPage file
+@use "HeaderAndLandingPage" as *; 
+
+// import about file
+@use "about" as *; 
+
+// import what file
+@use "what" as *; 
+
+// import responsive file
+@use "responsive" as *; 
+
+// import adsOne file
+@use "adsOne" as *; 
+
+// import work file
+@use "work" as *; 
+
+// import adsThree file
+@use "adsThree" as *; 
+
+// import contact file
+@use "contact" as *; 
+
+// import footer file
+@use "footer" as *; 

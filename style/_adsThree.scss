@@ -1,0 +1,66 @@
+// import variables file
+@use "variables" as *;
+.adsThree {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.411)), url(../imgs/11.jpg);
+    background-color: $main_color;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    color: white;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        div:nth-child(1) {
+            font-size: $font_four;
+        }
+        div:nth-child(2) {
+            display: flex;
+            gap: 10px;
+            font-size: $font_six;
+            input:nth-child(1) {
+                background-color: transparent;
+                color: white;
+                padding: 10px 20px;
+                border: 1px solid white; 
+                &::placeholder {
+                    color: white;
+                }
+            }
+            input:nth-child(2) {
+                background-color: #F3F4F5;
+                color: rgb(0, 0, 0);
+                padding: 10px 20px;
+                border: 1px solid white;
+                transition: 0.5s;
+                cursor: pointer;
+                &:hover {
+                    color: rgb(255, 255, 255);
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .adsThree {
+        .container {
+            div:nth-child(2) {
+                flex-direction: column;
+                align-items: center;
+                input:nth-child(1) {
+                    width: 12.5em;
+                    text-align: center;
+                }
+                input:nth-child(2) {
+                    width: 6.25em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// import variables file
+@use "variables" as *; 
+.responsive {
+    .containerBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .boxOne {
+            background: url(../imgs/2.jpg);
+            background-color: $main_color;
+            width: 50%;
+            height: 75vh;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-clip: border-box;
+        }
+        .boxTwo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            height: 75vh;
+            background-color: #f8f8f8;
+            padding: 0 50px;
+            div:nth-child(3) {
+                color: $sec_color;
+                line-height: 1.5;
+                font-size: $font_six;
+            }
+        }
+    }
+}
+@media (max-width:900px) {
+    .responsive {
+        .containerBox {
+            flex-direction: column;
+            .boxOne,
+            .boxTwo {
+                width: 100%;
+            }
+        }
+    }
+}

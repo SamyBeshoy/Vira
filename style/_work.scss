@@ -1,0 +1,54 @@
+// import variables file
+@use "variables" as *;
+.work {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        .boxs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 20px;
+                img {
+                    width: 18.75em;
+                } 
+                div:nth-child(2) {
+                    font-size: $font_five;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                hr {
+                    height: 1px;
+                    width: 50px;
+                    color: $third_color;
+                    background-color: $third_color;
+                }
+                div:nth-child(4) {
+                    color: $sec_color;
+                    line-height: 1.5;
+                    font-size: $font_six;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .work {
+        .container {
+            .boxs {
+                flex-direction: column;
+            }
+        }
+    }
+}
